@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/item"
+    app:cardCornerRadius="15dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/color"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:background="#F63939"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical" />
+        <TextView
+            android:id="@+id/title"
+            style="@style/Title"
+            android:text="Title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/color"/>
+        <TextView
+            style="@style/HashTag"
+            android:text="hashTag"
+            android:id="@+id/hashtag"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintLeft_toLeftOf="@id/title"/>
+        <TextView
+            android:id="@+id/deadline"
+            style="@style/Deadline"
+            android:text="11.02.2020"
+            app:layout_constraintTop_toBottomOf="@id/didnt"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_arrow_right_alt_24"
+            android:tint="#F63939"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@id/deadline" />
+
+        <TextView
+            android:id="@+id/did"
+            style="@style/Deadline"
+            android:text="Done"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#004D40"
+            app:layout_constraintRight_toLeftOf="@id/didnt"
+            app:layout_constraintLeft_toLeftOf="@id/hashtag"
+            app:layout_constraintTop_toBottomOf="@id/hashtag" />
+        <TextView
+            android:id="@+id/didnt"
+            style="@style/Deadline"
+            android:text="Cancel"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#A54747"
+            app:layout_constraintLeft_toRightOf="@id/did"
+            app:layout_constraintTop_toBottomOf="@id/hashtag"
+            app:layout_constraintRight_toRightOf="@id/deadline"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_task"
+        android:icon="@drawable/ic_baseline_note_add_24"
+        android:title="@string/add_task" />
+    <item
+        android:id="@+id/all_task"
+        android:icon="@drawable/ic_baseline_dynamic_feed_24"
+        android:title="@string/all_task" />
+    <item
+        android:id="@+id/basket"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="@string/basket" />
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:title="@string/edit" />
+    <item
+        android:id="@+id/history"
+        android:icon="@drawable/ic_baseline_format_list_numbered_24"
+        android:title="@string/history" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="@string/share" />
+    <item
+        android:id="@+id/rules"
+        android:icon="@drawable/ic_baseline_block_24"
+        android:title="@string/rules" />
+    <item
+        android:id="@+id/instruction"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/instruction" />
+
+</menu>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CourseWork</string>
+    <string name="add_task">Add a new task</string>
+    <string name="basket">Basket</string>
+    <string name="all_task">All tasks</string>
+    <string name="history">History</string>
+    <string name="share">Share</string>
+    <string name="rules">Rules</string>
+    <string name="instruction">Instructions</string>
+    <string name="edit">Edit</string>
+</resources>
